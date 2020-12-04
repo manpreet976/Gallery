@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Northside Gallery</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <img src="../Images/Logo.jpg" alt="logo of northside">
+      <section>
+        <h1>Northside Gallery</h1>
+      </section>
+    </header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="./current_exhibition.html">Current Exhibition</a>
+      <a href="./future.html">Future Exhibition</a>
+    
+      <a href="contact.html">Contact</a>
+      <a href="./bookings.html">Bookings Page</a>
+    </nav>
+    <main>
+             <section class ="page-title">
+              
+                    <h3>Upcoming Events</h3> 
+            </section>
+            <section>
+                    <table>
+                    <tr>
+                    <th>Ticket Type</th>
+                    <th>2 Hour Pass</th>
+                    <th>Day Pass</th>
+                  
+                    </tr>
+                    <tr>
+                  <td>Adult</td>
+                  <td>$25</td>
+                  <td>$30</td>
+                    </tr>
+                    <tr>
+                  <td>Student</td>
+                  <td>$15</td>
+                  <td>$20</td>
+                
+                    </tr>
+                    <tr>
+                  <td>Family Pass</td>
+              
+                  <td>$35</td>
+                  <td>$50</td>
+        
+                  </tr>
+                  </table>
+                </section>
+                
+                <section class ="page-title">
+              
+                    <h2>Booking Form</h2> 
+            </section>
+        <div class="form2" >
+                        <label>Northside Gallery :
+                        <select> 
+                          <option value="">Choose</option>
+                        <option>Current Exhibition</option>
+                        <option value="Future Exhibition">Future Exhibition</option>
+                        </select><br><br>
+                        </label>  
+                        <label>Exhibitions :
+                        <select id="exhibitions" required>
+                        
+                          <option value="">Choose</option>
+                            <option value="">Women with stylish glasses</option>
+                            <option value="">Rare design of mirrors</option>
+                            <option value="">Night Life in the city</option>
+                            <option >Sunflower in pink color</option>
+                            <option >Kitchen Painting of lemon</option>
+                            <option >Door in red</option>
+                            <option >Isolated Beach</option>
+                            <option >Kids Cartoon</option>
+                            <option >girl under the stars</option>
+                            </select><br><br></label>
+                            <label >Email id :
+                             <input type="text" name="email id"><br><br>
+                            </label>
+                           
+                               <label>Date :</label>
+                                
+                                <input type="date">
+                                
+                            <br><br>
+                            
+                            
+                            <div data-ng-app="" data-ng-init="quantity=1;price=35">
+                                <label>Senior Tickets</label>
+
+                                Quantity: <input type="number" >
+                                Total in dollar: {{ quantity * price }}
+                            
+                                <br><br>
+                             
+                            
+                                <label>Adult Tickets</label>
+  
+                                Quantity: <input type="number">
+                            
+                                
+                                Total in dollar:  {{ quantity * price }}
+                               
+                                <br><br>
+                             
+                              
+                                
+                                <label>Student Tickets</label>
+    
+                                Quantity: <input type="number">
+                                
+                                  
+                                Ticket:  {{ quantity * price }}
+                            </div>
+                              
+                                
+                            
+                                <br><br>
+                                <select >
+                                  <option >-Select Payment Method-</option>
+                                  <option >Cash</option>
+                                  <option >Paypal</option>
+                                  <option >Credit card</option>
+
+                                </select><br><br>
+                                  <label>submit
+                                  <input type="submit" value="Book Now"></label>
+                                  <br><br>
+                            
+                                    
+                            
+                    <section class="rate">
+                      <h1>Ratings</h1>
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </section>
+                    </div>
+        
+             
+    </main>
+        <footer>
+          <a href="https://www.facebook.com/groups/420649725168214"><img src="../Images/facebook-3.png" alt="facebook link"></a>
+          <a href="https://www.instagram.com/artlooksoftwareltd/"><img src="../Images/instagram.png" alt="instagram link"></a>
+            <a href="https://twitter.com/NationalGallery"><img src="../Images/twitter.png" alt="twitter link"></a>
+           </footer>
+           <footer>
+             <a href="copyright.html"><span>Copyright 2020</span></a>
+        </footer>
+       </body>
+     </html>
+          

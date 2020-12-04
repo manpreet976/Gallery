@@ -1,0 +1,356 @@
+/* Body */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    margin: 4em auto;
+    width: 80%;
+  }
+  
+  body > * {
+    background-color: rgb(235, 189, 225);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+  }
+  
+  header > img {
+    border-radius: 80%;
+    
+  width:200px;
+  height:200px;
+    /* flex: 0 0 200px;*/
+}
+img>p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+  
+  header > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    background-image: url("../Images/free-retromod-facebook-timelime-cover-by-FPTFY-1.png");
+    
+    
+    
+  
+  }
+  
+  header > section > h1 {
+    font-size: 45pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(53, 22, 53);
+    
+  }
+  
+
+
+
+  /* Nav bar */
+  nav {
+    display: flex;
+    justify-content:space-between;
+    align-content: stretch;
+    background-color:#333;
+  }
+  
+  nav > a {
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color:black;
+    padding: 1em 1em;
+  }
+  
+  nav > a:hover {
+    background-color:blue;
+  }
+  nav > a:active {
+    background-color:red;
+  }
+  
+  /* Content */
+  main > section {
+    margin: 1em;
+  }
+  
+  .page-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .page-title > h2 {
+    font-size: 22pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .overview > article {
+    flex-shrink: 3;
+    padding-right: 2em;
+  }
+  
+  .overview > img {
+    flex-grow: 3;
+    display: block;
+  }
+  
+  table {
+    display: flex;
+    overflow-x:auto;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+  }
+ 
+ 
+  
+  th {
+    height: 50px;
+  }
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform .2s;
+    padding: 0%;
+  }
+  
+
+  .gallery > article {
+    width: 25%;
+    margin: 1em;
+  }
+  
+  .gallery > article > img {
+    width: 100%;
+   
+  }
+  .gallery>article>img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  .hee{
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  text-align: center;
+}
+.form1{
+  display:inline-flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin-left: 35%;
+  font-size: 14px;
+  
+}
+.form1> label>p{
+  
+  border: black;
+  
+}
+iframe{
+  width: 10em; ;
+ 
+  height:10em;
+  margin-top: 5em;
+
+  margin-left: 2em;
+}
+
+.con2{
+ display:inline-flex;
+ justify-content: center;
+ text-align: center;
+
+}
+.form{
+  padding: 5em;
+  
+}
+.form>label{
+
+  /* Uniform size & alignment */
+  display: flex;
+  justify-content: center;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+  padding:1em;
+  font-size:14px ;
+
+}
+
+input[type=text] {
+  width: 600px;
+  height:40px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+textarea{
+  width:600px;
+
+  height:40px;
+  
+}
+ 
+
+
+  /*table*/
+  table {
+    display: inline-flex;
+    margin-left:25%;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+   
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    border-top:solid ;
+    border-left: solid;
+    border-bottom: solid;
+    border-right: solid;
+  }
+  
+
+  .con3{
+    display:flex-inline;
+    justify-content: center;
+    margin-top: 0em;
+    text-align: center;
+
+  }
+
+.form2{
+  display: flex;
+  margin-left: 2em;
+  flex-direction: column;
+
+}
+.form2>label{
+
+  /* Uniform size & alignment */
+  display: flex;
+  margin-left: 0em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+  padding:1em;
+  font-size:14px ;
+}
+
+#booking{
+  
+  display: flex;
+  margin-left: 2em;
+  flex-direction: column;
+
+}
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/******  Rating Widget *****/
+
+.rate {
+  display: flex;
+  justify-content: center;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+  /* Footer */
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+  }
+  
+  footer > img {
+    padding: 0.2em;
+  }
+  
+  footer > span {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
